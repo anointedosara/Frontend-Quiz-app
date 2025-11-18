@@ -25,15 +25,15 @@ questionWrapper.classList.add("hidden");
 resultWrapper.classList.add("hidden");
 
 let theme = "light";
-darkModeImg.src = "/assets/images/icon-sun-dark.svg";
-lightModeImg.src = "/assets/images/icon-moon-dark.svg";
+darkModeImg.src = "/assets/images/icon-moon-dark.svg";
+lightModeImg.src = "/assets/images/icon-sun-dark.svg";
 
 const toggleTheme = () => {
   theme = theme === "light" ? "dark" : "light";
   if (theme === "dark") {
     body.classList.add("bg");
-    darkModeImg.src = "/assets/images/icon-sun-light.svg";
-    lightModeImg.src = "/assets/images/icon-moon-light.svg";
+    darkModeImg.src = "/assets/images/icon-moon-light.svg";
+    lightModeImg.src = "/assets/images/icon-sun-light.svg";
     changeModeBtn.style.transform = "translateX(17px)";
     welcome.style.color = "white";
     subjectTitle.querySelector("div").style.background = "white";
@@ -42,8 +42,8 @@ const toggleTheme = () => {
     question.style.color = "white";
   } else {
     body.classList.remove("bg");
-    darkModeImg.src = "/assets/images/icon-sun-dark.svg";
-    lightModeImg.src = "/assets/images/icon-moon-dark.svg";
+    darkModeImg.src = "/assets/images/icon-moon-dark.svg";
+    lightModeImg.src = "/assets/images/icon-sun-dark.svg";
     changeModeBtn.style.transform = "translateX(0)";
     welcome.style.color = "#313E51";
     subjectTitle.querySelector("div").style.background = "#313E51";
