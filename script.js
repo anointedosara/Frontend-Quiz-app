@@ -2,6 +2,7 @@
 const subjectTitle = document.querySelector(".subject-title");
 const changeModeBtn = document.querySelector(".change-mode-btn");
 const body = document.body;
+const modeCnt = document.querySelector(".mode-container")
 const lightModeImg = document.querySelector(".light");
 const darkModeImg = document.querySelector(".dark");
 const subjectsContainer = document.querySelector(".subjects");
@@ -52,7 +53,7 @@ const toggleTheme = () => {
   }
 };
 
-changeModeBtn && changeModeBtn.addEventListener("click", toggleTheme);
+modeCnt.addEventListener("click", toggleTheme);
 
 let currentSubject = "";
 
