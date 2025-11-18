@@ -182,7 +182,7 @@ p {
 }
 .question {
   width: 50%;
-  color: #313e51;
+  color: white;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
