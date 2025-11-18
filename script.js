@@ -1,5 +1,4 @@
 // ...existing code...
-const subjectTitle = document.querySelector(".subject-title");
 const changeModeBtn = document.querySelector(".change-mode-btn");
 const body = document.body;
 const modeCnt = document.querySelector(".mode-container")
@@ -13,9 +12,11 @@ const resultWrapper = document.querySelector(".result-wrapper");
 const result = document.querySelector(".results");
 const res = document.querySelector(".res");
 const range = document.querySelector(".range");
-
 const question = document.querySelector(".question");
 const options = document.querySelector(".options");
+const subjectTitle = document.querySelector(".subject-title");
+const subjectTitleP = document.querySelector(".subject-title p");
+const subjectTitleD = document.querySelector(".subject-title div");
 
 const optns = ["A", "B", "C", "D"];
 
@@ -36,10 +37,9 @@ const toggleTheme = () => {
     lightModeImg.src = "/assets/images/icon-sun-light.svg";
     changeModeBtn.style.transform = "translateX(17px)";
     welcome.style.color = "white";
-    subjectTitle.querySelector("div").style.background = "white";
-    subjectTitle.querySelector("p").style.color = "white";
     res.style.color = "white";
     question.style.color = "white";
+    subjectTitle.classList.add('col');
   } else {
     body.classList.remove("bg");
     darkModeImg.src = "/assets/images/icon-moon-dark.svg";
@@ -50,6 +50,7 @@ const toggleTheme = () => {
     subjectTitle.querySelector("p").style.color = "#313E51";
     res.style.color = "#313E51";
     question.style.color = "#313E51";
+    subjectTitle.classList.remove('col');
   }
 };
 

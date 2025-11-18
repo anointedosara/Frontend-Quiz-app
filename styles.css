@@ -44,8 +44,14 @@ body {
   display: flex;
   align-items: center;
 }
+.col p {
+  color: white !important;
+}
+.col div {
+  background: white !important;
+}
 .subject-title div {
-  background: white;
+  background: #313e51;
   border-radius: 5px;
   width: 50px;
   height: 50px;
@@ -57,7 +63,7 @@ body {
 .subject-title p {
   font-size: 20px;
   font-weight: 700;
-  color: white;
+  color: #313e51;
 }
 .mode {
   display: flex;
@@ -182,10 +188,11 @@ p {
 }
 .question {
   width: 50%;
-  color: white;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  color: #313e51;
+  
 }
 .question p {
   font-size: 16px;
