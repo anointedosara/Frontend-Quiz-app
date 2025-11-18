@@ -14,6 +14,7 @@ body {
   background-color: white;
   background-size: cover;
   height: 100vh;
+  transition: all 0.3s ease;
 }
 .bg {
   background: url(/starter-code/assets/images/pattern-background-desktop-dark.svg)
